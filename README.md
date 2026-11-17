@@ -132,7 +132,7 @@ StudentCLMS/
 5. The parent approves or rejects the request.
 6. After parent approval, the staff can review the leave application.
 7. Staff approves or rejects the request.
-8. The student can view the updated leave status in their dashboard.
+8. The student can view the updated leave status through their email and in dashboard.
 
 ## Installation and Setup
 
