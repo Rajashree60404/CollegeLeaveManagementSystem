@@ -223,7 +223,7 @@ Ensure both frontend API configurations point to the running backend.
 
 **Student Home**
 
-![Student Home](screenshots/student-Home-page.png)
+![Student Home](screenshots/student-homepage.png)
 
 **Student Dashboard**
 
