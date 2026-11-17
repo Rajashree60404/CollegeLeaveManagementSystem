@@ -180,7 +180,6 @@ Configure the following environment variables:
 | `CLOUDINARY_API_KEY` | Cloudinary API key |
 | `CLOUDINARY_API_SECRET` | Cloudinary API secret |
 
-Configure these variables in your operating system or IDE run configuration. Never commit actual credentials to GitHub.
 
 Update the database configuration if necessary in `src/main/resources/application.properties`.
 
