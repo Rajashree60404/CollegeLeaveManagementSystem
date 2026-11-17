@@ -15,6 +15,7 @@ The project consists of three integrated applications:
 ## Features
 
 ### Student Module
+
 - Student login and authentication using JWT.
 - Student dashboard with leave statistics.
 - Apply for leave with date range and reason.
@@ -26,6 +27,7 @@ The project consists of three integrated applications:
 - Receive email notifications about leave applications.
 
 ### Staff Module
+
 - Staff login and authentication using JWT.
 - Staff dashboard.
 - Register students.
@@ -36,6 +38,7 @@ The project consists of three integrated applications:
 - Receive relevant email notifications.
 
 ### Parent Approval Module
+
 - Receive leave application notifications through email.
 - Approve or reject student leave requests through email links.
 - Track parent approval status as part of the leave workflow.
@@ -62,38 +65,63 @@ The project consists of three integrated applications:
 
 ## Project Structure
 
+```text
 StudentCLMS/
 │
-├── CollegeLeaveManagementSystem/
+├── CollegeLeaveManagementSystem/       # Spring Boot Backend
 │   ├── src/
 │   │   ├── main/
-│   │   │   ├── java/
+│   │   │   ├── java/in/clms/
+│   │   │   │   ├── config/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── dto/
+│   │   │   │   ├── enums/
+│   │   │   │   ├── exception/
+│   │   │   │   ├── exceptions/handler/
+│   │   │   │   ├── model/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── service/
+│   │   │   │   ├── service/impl/
+│   │   │   │   └── util/
 │   │   │   └── resources/
 │   │   │       └── application.properties
 │   │   └── test/
-│   ├── pom.xml
-│   └── mvnw
+│   ├── .mvn/wrapper/
+│   ├── mvnw
+│   ├── mvnw.cmd
+│   └── pom.xml
 │
-├── student_app/
+├── student_app/                        # Student React Application
 │   ├── public/
+│   │   ├── images/
+│   │   └── videos/
 │   ├── src/
+│   │   ├── assets/
 │   │   ├── components/
 │   │   ├── context/
 │   │   ├── pages/
 │   │   └── services/
-│   └── package.json
+│   ├── package.json
+│   ├── package-lock.json
+│   └── vite.config.js
 │
-├── staffapp/
+├── staffapp/                           # Staff React Application
 │   ├── public/
+│   │   └── images/
 │   ├── src/
-│   │   ├── components/
 │   │   ├── api/
+│   │   ├── assets/
+│   │   ├── components/
 │   │   └── pages/
-│   └── package.json
+│   ├── package.json
+│   ├── package-lock.json
+│   └── vite.config.js
+│
+├── screenshots/                        # Application Screenshots
 │
 ├── .gitignore
 └── README.md
-
+```
 
 ## Application Workflow
 
@@ -121,8 +149,9 @@ Install the following before running the project:
 
 ### 1. Clone the Repository
 
-
+```bash
 git clone https://github.com/Rajashree60404/CollegeLeaveManagementSystem.git
+```
 
 Navigate into the project:
 
@@ -138,7 +167,7 @@ Navigate to the backend folder:
 cd CollegeLeaveManagementSystem
 ```
 
-Configure the required environment variables:
+Configure the following environment variables:
 
 | Variable | Purpose |
 |---|---|
@@ -169,7 +198,7 @@ http://localhost:8082
 
 ### 3. Student Application Setup
 
-Open a new terminal:
+Open a new terminal from the project root:
 
 ```bash
 cd student_app
@@ -179,7 +208,7 @@ npm run dev
 
 ### 4. Staff Application Setup
 
-Open another terminal:
+Open another terminal from the project root:
 
 ```bash
 cd staffapp
@@ -187,29 +216,43 @@ npm install
 npm run dev
 ```
 
-Ensure the frontend API configuration points to the running backend.
+Ensure both frontend API configurations point to the running backend.
 
 ## Screenshots
 
-Screenshots of the Student and Staff applications will be added here.
-
 ### Student Application
+
+**Student Home**
+
 ![Student Home](screenshots/student-Home-page.png)
+
+**Student Dashboard**
 
 ![Student Dashboard](screenshots/student-dashboard.png)
 
+**Apply Leave**
+
 ![Apply Leave](screenshots/applyLeaveForm.png)
+
+**Leave Status**
 
 ![Leave Status](screenshots/leaveStatus.png)
 
-
 ### Staff Application
+
+**Staff Home**
 
 ![Staff Home](screenshots/staff-Home-page.png)
 
+**Staff Dashboard**
+
 ![Staff Dashboard](screenshots/staff-dashboard.png)
 
+**Leave Applications**
+
 ![Leave Applications](screenshots/leaveApplications.png)
+
+**Register Students**
 
 ![Register Students](screenshots/registerStudents.png)
 
@@ -223,16 +266,15 @@ Screenshots of the Student and Staff applications will be added here.
 
 ## Author
 
-**Rajashree**
+**Rajashree D**
+
 Master of Computer Applications (MCA)
 
 ## Project Information
 
-**Project Name:** College Leave Management System
-
-**Project Type:** Final-Year MCA Project
-
-**Repository:** [College Leave Management System](https://github.com/Rajashree60404/CollegeLeaveManagementSystem)
+- **Project Name:** College Leave Management System
+- **Project Type:** Final-Year MCA Project
+- **Repository:** [College Leave Management System](https://github.com/Rajashree60404/CollegeLeaveManagementSystem)
 
 ---
 
