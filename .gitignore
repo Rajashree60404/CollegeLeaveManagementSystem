@@ -1,0 +1,29 @@
+
+# Java / Spring Boot
+target/
+*.class
+*.log
+
+# IDE files
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# React / Node.js
+node_modules/
+dist/
+build/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
