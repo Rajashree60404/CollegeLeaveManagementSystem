@@ -272,7 +272,6 @@ Master of Computer Applications (MCA)
 ## Project Information
 
 - **Project Name:** College Leave Management System
-- **Project Type:** Final-Year MCA Project
 - **Repository:** [College Leave Management System](https://github.com/Rajashree60404/CollegeLeaveManagementSystem)
 
 ---
